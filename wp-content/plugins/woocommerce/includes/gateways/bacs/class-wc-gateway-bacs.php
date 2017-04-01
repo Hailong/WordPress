@@ -279,7 +279,7 @@ class WC_Gateway_BACS extends WC_Payment_Gateway {
 		$bacs_accounts = apply_filters( 'woocommerce_bacs_accounts', $this->account_details );
 
 		if ( ! empty( $bacs_accounts ) ) {
-			echo '<h2 class="wc-bacs-bank-details-heading">' . __( 'Our Bank Details', 'woocommerce' ) . '</h2>' . PHP_EOL;
+			// echo '<h2 class="wc-bacs-bank-details-heading">' . __( 'Our Bank Details', 'woocommerce' ) . '</h2>' . PHP_EOL;
 
 			foreach ( $bacs_accounts as $bacs_account ) {
 
