@@ -57,47 +57,6 @@ get_header(); ?>
   	<div class="container">
   		<!-- display product categories sidebar -->
   				<?php if($count > 0){ ?>
-            <div class="mobile-category">
-              <?php if(function_exists('register_field_group')) : ?>
-  						<h2><?php echo get_field('sidebar_title', get_option('page_on_front')) ?></h2>
-  						<?php endif; ?>
-              <div class="mobile-grid-50">
-                <span>Parent</span>
-                <div class="select-container">
-                  <i class="fa-chevron-down fa"></i>
-                  <select class="parent" name="parent">
-                    <option selected><?php echo "Select Category" ?></option>
-                    <?php foreach ($product_categories as $mobileCat) { ?>
-                      <?php if($mobileCat->parent == 0){ ?>
-                          <option class="cat-id-<?php echo $mobileCat->term_id ?>" value="<?php echo $mobileCat->slug ?>"><?php echo $mobileCat->name ?></option>
-                      <?php } ?>
-                    <?php } ?>
-                  </select>
-                </div>
-              </div>
-
-              <div class="mobile-grid-50">
-                <span>Sub Cat</span>
-                <div class="select-container">
-                  <i class="fa-chevron-down fa"></i>
-                  <select class="select-label" name="">
-                      <option>Select Sub Cat</option>
-                  </select>
-                  <?php foreach ($product_categories as $subMobile) { ?>
-                      <?php if($subMobile->parent == 0){ ?>
-                          <?php $mobTermID = $subMobile->term_id  ?>
-                          <select class="sub-category <?php echo  $subMobile->slug?>" name="subcat">
-                              <?php foreach ($product_categories as $subMob) { ?>
-                                  <?php if($mobTermID == $subMob->parent){ ?>
-                                    <option value="<?php echo site_url('/product-category/') ?><?php echo $subMob->slug ?>"><?php echo $subMob->name ?></option>
-                                  <?php } ?>
-                              <?php } ?>
-                          </select>
-                      <?php } ?>
-                  <?php } ?>
-                </div>
-              </div>
-            </div>
 
   					<div class="categories">
   						<!-- parent category -->
