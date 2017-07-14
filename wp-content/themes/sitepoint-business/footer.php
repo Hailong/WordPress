@@ -51,7 +51,7 @@ if(function_exists("register_field_group")) { ?>
             <h3><?php echo $location['address'] ?></h3>
           </div> -->
           <!--百度地图容器-->
-          <div style="width:548px;height:398px;border:#ccc solid 1px;" id="dituContent"></div>
+          <div style="width:548px;height:375px;border:#ccc solid 1px;" id="dituContent"></div>
         </div>
         <?php endif; ?>
 
@@ -162,7 +162,7 @@ if( !empty($contact_form) ): ?>
     }
     
     //标注点数组
-    var markerArr = [{title:"荣汇鑫颗",content:"公司简介：<br/>北京荣汇鑫颗科技有限公司，成立于2013年，主要从事移动、联通、电信、铁塔的室内分布基础建设和WIFI及WLAN局域网无线覆盖工程，经过四年多的努力与发展，已具有一定规模及实力，现拥有一支稳定的团队，以卓越的服务品质和专业的技术服务实力，为客户提供更优质的服务。",point:"116.296075|39.893322",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"荣汇鑫颗",content:"公司简介：<br/>北京荣汇鑫颗科技有限公司，成立于2013年，主要从事移动、联通、电信、铁塔<br/>的室内分布基础建设和WIFI及WLAN局域网无线覆盖工程，经过四年多的努力与<br/>发展，已具有一定规模及实力，现拥有一支稳定的团队，以卓越的服务品质和专<br/>业的技术服务实力，为客户提供更优质的服务。",point:"116.296075|39.893322",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
          ];
     //创建marker
     function addMarker(){
