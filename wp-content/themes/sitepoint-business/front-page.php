@@ -215,11 +215,11 @@ if(function_exists("register_field_group")) { ?>
         <?php $sctr = 1 ?>
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
             <?php setup_postdata($post); ?>
-            <?php if($sctr % 3 == 1 ||  $sctr == 1 ){
+            <?php if($sctr % 4 == 1 ||  $sctr == 1 ){
       				echo '<div class="grid-container">';
       			} ?>
 
-            <div class="grid-33 tablet-grid-33 mobile-grid-100 service-item">
+            <div class="grid-25 tablet-grid-25 mobile-grid-100 service-item">
       				<div class="services-thumbnail">
       					<a href="<?php echo the_permalink() ?>">
       						<?php
@@ -245,7 +245,7 @@ if(function_exists("register_field_group")) { ?>
       				</div>
 
       			</div>
-            <?php if($sctr % 3 == 0 ){
+            <?php if($sctr % 4 == 0 ){
       				echo '</div>';
       			} ?>
         <?php $sctr++; endforeach; ?>
