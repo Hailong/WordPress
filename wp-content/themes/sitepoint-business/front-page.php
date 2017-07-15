@@ -39,10 +39,11 @@ get_header(); ?>
 
   </section>
 <?php endif; } ?>
+
 <style type="text/css">
   #owl-hero .owl-prev,
   #owl-hero .owl-next {
-    bottom: 242px;
+    bottom: 220px;
     font-size: 56px;
   }
 </style>
@@ -52,38 +53,21 @@ get_header(); ?>
           $items = array(
             array(
               'image' => '//cdn.bjrhxk.cn/wp-content/uploads/2016/12/hero_banner.jpg',
-              'message' => '我们的服务项目：<br>移动、联通、电信、铁塔四大运营商的网络工程综合布线、监控安装、服务器局域网组建。',
+              'message' => '<strong>我们的服务项目：</strong><br><br>移动、联通、电信、铁塔四大运营商的网络工程综合布线、监控安装、服务器局域网组建。',
             ),
             array(
               'image' => '//cdn.bjrhxk.cn/wp-content/uploads/2017/02/hero_banner.jpg',
-              'message' => '我们的理念：<br>老老实实做人，踏踏实实做事。',
+              'message' => '<strong>我们的理念：</strong><br><br>老老实实做人，踏踏实实做事。',
             ),
           );
         ?>
         <?php foreach($items as $key => $item): ?>
           <div class="item">
               <div class="grid-100" style="height: 504px;background-image: url(<?php echo $item['image']; ?>);background-size: cover;background-position: 0% 50%;">
-                  <div class="grid-5 tablet-grid-5">
-                    &nbsp;
-                  </div>
-                  <div class="grid-40 mobile-grid-100 tablet-grid-100" style="padding-top: 230px;">
-                      <div class="message" style="background-color: rgba(0,0,0,.6);;color: white;font-size: 24px;padding: 40px;height: 224px;">
+                  <div class="grid-40 prefix-10 mobile-grid-90 mobile-prefix-5 tablet-grid-80 tablet-prefix-10" style="padding-top: 190px;">
+                      <div class="message" style="background-color: rgba(0,0,0,.6);color: white;font-size: 24px;padding: 40px;height: 291px;">
                         <?php echo $item['message']; ?>
                       </div>
-                  </div>
-                  <div class="grid-65 mobile-grid-100 tablet-grid-65">
-                      <div class="team-name">
-                      <?php
-                      $client_name = '';
-                      if( !empty($client_name) ):
-                      ?><?php echo $client_name; ?>
-                      <?php endif; ?>
-                      </div>
-                    <?php
-                    $position_title = '';
-                    if( !empty($position_title) ):
-                    ?><?php echo $position_title; ?>
-                  <?php endif; ?>
                   </div>
               </div>
           </div>
