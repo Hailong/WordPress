@@ -341,8 +341,8 @@ if ( ! function_exists( 'sitepoint_business_scripts_styles' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-		wp_enqueue_script( 'sitepoint-business-vendors', trailingslashit( get_template_directory_uri() ) . 'js/vendors.min.js', array('jquery'), '1.0.1', true );
-		wp_enqueue_script( 'sitepoint-business-custom', trailingslashit( get_template_directory_uri() ) . 'js/custom.min.js', array('jquery'), '1.1', true );
+		wp_enqueue_script( 'sitepoint-business-vendors', trailingslashit( get_template_directory_uri() ) . 'js/vendors.min.js', array('jquery'), '1.0.2', true );
+		wp_enqueue_script( 'sitepoint-business-custom', trailingslashit( get_template_directory_uri() ) . 'js/custom.min.js', array('jquery'), '1.2', true );
 
 
 		if(function_exists("register_field_group")) {
