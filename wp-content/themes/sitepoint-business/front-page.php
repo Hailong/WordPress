@@ -65,7 +65,7 @@ get_header(); ?>
           <div class="item">
               <div class="grid-100" style="height: 504px;background-image: url(<?php echo $item['image']; ?>);background-size: cover;background-position: 0% 50%;">
                   <div class="grid-40 prefix-10 mobile-grid-90 mobile-prefix-5 tablet-grid-80 tablet-prefix-10" style="padding-top: 190px;">
-                      <div class="message" style="background-color: rgba(0,0,0,.6);color: white;font-size: 24px;padding: 40px;height: 291px;">
+                      <div class="message" style="background-color: rgba(0,0,0,.6);color: white;font-size: 24px;padding: 40px;height: 291px;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;">
                         <?php echo $item['message']; ?>
                       </div>
                   </div>
