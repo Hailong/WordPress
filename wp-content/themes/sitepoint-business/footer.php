@@ -82,7 +82,7 @@ if( !empty($contact_form) ): ?>
       <svg class="open" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path  d="M40 4H8C5.79 4 4.02 5.79 4.02 8L4 44l8-8h28c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zM18 22h-4v-4h4v4zm8 0h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
       <svg class="close" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
       </span>
-      <span class="spantext"><?php _e( 'Contact Us', 'my-text-domain' ); ?></span>
+      <span class="spantext"><?php /*_e( 'Contact Us', 'my-text-domain' );*/'联系我们' ?></span>
   	</div>
   </div>
 <?php endif; } ?>
