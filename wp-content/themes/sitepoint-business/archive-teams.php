@@ -22,7 +22,7 @@ get_header(); ?>
 <section class="teams">
 	<div class="grid-container">
 		<?php while(have_posts($teams)) : the_post(); ?>
-			<div class="grid-50 tablet-grid-50 mobile-grid-100 team-member">
+			<div class="grid-50 tablet-grid-50 mobile-grid-100 team-member" style="text-align: center;">
 					<div class="team-thumbnail grid-100">
 						<?php
 							if(has_post_thumbnail()) {
