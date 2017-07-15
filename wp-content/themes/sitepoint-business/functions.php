@@ -54,7 +54,7 @@ if ( ! function_exists( 'sitepoint_business_setup' ) ) {
 		// Create an extra image size for the Post featured image
 		add_image_size( 'sitepoint_business_theme_post_feature_full_width', 806, 300, true );
 
-		add_image_size( 'sitepoint_sevices_listing', 600, 200, true );
+		add_image_size( 'sitepoint_sevices_listing', 600, 338, true );
 		add_image_size( 'sitepoint_team_listing', 145, 145, true );
 
 		add_image_size( 'sitepoint_homepage_feat_img', 700, 800, true );
